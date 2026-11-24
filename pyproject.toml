@@ -1,0 +1,14 @@
+[tool.pytest.ini_options]
+addopts = "-ra --tb=short --alluredir=allure-results --clean-alluredir"
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "PT", "SIM", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.ruff.format]
+quote-style = "double"
